@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="dashboard-container" id="dashboard-container" style="display: none;">
+        <h1>Welcome, <span id="user"></span>!</h1>
+        <button onclick="logout()">Logout</button>
+
+        <div class="feeds">
+            <div class="feed" id="facebook-feed">
+                <h3>Facebook Feed</h3>
+                <ul>
+                    <li>Post 1 from Facebook</li>
+                    <li>Post 2 from Facebook</li>
+                    <li>Post 3 from Facebook</li>
+                </ul>
+            </div>
+            <div class="feed" id="twitter-feed">
+                <h3>Twitter Feed</h3>
+                <ul>
+                    <li>Tweet 1 from Twitter</li>
+                    <li>Tweet 2 from Twitter</li>
+                    <li>Tweet 3 from Twitter</li>
+                </ul>
+            </div>
+            <div class="feed" id="instagram-feed">
+                <h3>Instagram Feed</h3>
+                <ul>
+                    <li>Photo 1 from Instagram</li>
+                    <li>Photo 2 from Instagram</li>
+                    <li>Photo 3 from Instagram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

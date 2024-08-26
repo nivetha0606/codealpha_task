@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.login-container, .dashboard-container {
+    background: #1a1a2e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #2e2e4e;
+    color: #ffffff;
+    outline: none;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8562;
+}
+
+.feeds {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.feed {
+    background: #2e2e4e;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.feed:hover {
+    transform: translateY(-5px);
+    border-color: #ff6f61;
+}
+
+.feed h3 {
+    margin-top: 0;
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #ff6f61;
+}
